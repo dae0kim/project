@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>COVID-19를 알아보자!</title>
+        <!-- virus css파일과 연결 -->
+        <link type="text/css" rel="stylesheet" href="virus.css">
+    </head>
+    <body>
+        <header>
+            <!-- 가장 상단의 이미지 로고. 누르면 메인 홈페이지로 이동하도록 연결 -->
+            <div id="mainlogo"> 
+                <a href="index.html">
+                <img width="180" height="150" src = "image/question-logo.png" /></a> <br />
+                <h3>"코로나" 얼마나 알고 계신가요?</h3>
+            </div>
+        </header>
+        <!-- 메뉴 바  -->
+        <nav id = "listbar">
+            <ul>
+                <li>
+                    <span><strong>코로나를 위한 생물학!</strong></span>
+                    <ol>
+                        <li><a href="dna-rna.html">DNA & RNA</a></li>
+                        <li><a href="virus.html">바이러스</a></li>
+                        <li><a href="vaccine.html">백신의 원리</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span><strong>예방이 최고!</strong></span>
+                    <ol>
+                        <li><a href="mask.html">마스크는 필수!</a></li>
+                        <li><a href="hand.html">손씻기는 필수!</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+        <!-- 본문 -->
+        <section>
+            <!-- 본문의 가장 상단에 audio 태그로 음악 재생 가능하도록 삽입. chrome에서 음악 자동재생으로 삽입하는 것이 막혀 사용자가 직접 조절 하도록 함.  -->
+            <div style="text-align: center;">
+                <span style="font-size: 0.8em;">음악을 들으며 읽으실 수 있습니다.</span><br>
+                <audio src="media/Aquarium.mp3" controls autoplay loop></audio>
+            </div>
+            <!--  virus 이미지 -->
+            <div style="text-align: center;">
+                <img width="300" height="300" src="image/virus.png">
+            </div>
+            <br><br>
+            <!-- 바이러스에 대한 설명 -->
+            <div id="virus-part">
+                <span style="font-size: 1.5em;"><strong>바이러스(virus)</strong></span><br><br>
+                살면서 바이러스(virus)라는 단어를 들어보지 않은 사람은 아마 없을 겁니다.<br> 
+                최근엔 COVID-19을 "코로나 바이러스"라 부르기도 하면서 더 자주 듣게 되었죠.<br><br>
+                하지만 여러분들은 바이러스를 정확히 알고 계신가요? 혹시 세균과 같은 것이라 생각하시지는 않나요?<br><br>
+                결론부터 말씀드리자면 세균(bacteria)과 바이러스(virus)는 다릅니다.<br><br>
+                지금부터 그 자세한 내용을 설명드리겠습니다.<br><br> 
+                우리가 흔히 알고있는 <strong>세균</strong>은 원핵생물로 분류가 됩니다. <br>
+                즉, 하나의 생명체로 취급합니다.<br><br> 
+                하지만 바이러스는 생물과 무생물의 특징을 모두 가지고 있는 <strong>유전 물질을 가진 단백질 덩어리</strong>라 할 수 있습니다.<br>
+                생명체라 부르기 애매한 것이죠.<br><br><br>
+                생명체로 분류가 되기 위해 가져야 할 특성은 다음과 같습니다.<br><br> 
+                1. 세포라는 구조적, 기능적 단위로 이루어져 있어야 한다.<br><br>
+                2. 독자적으로 물질대사를 할 수 있어야 한다.<br><br>
+                3. 여러 자극에 대한 반응을 일으킬 수 있어야 한다.<br><br>
+                4. 항상성이 있어야 한다.<br><br>
+                5. 스스로 발생과 생장을 할 수 있어야 한다.<br><br><br><br>
+                우선 바이러스는 세포 구조를 갖추고 있지 않습니다.<br><br> 
+                유전 정보를 담은 핵산을 단백질 막이 감싸고 있는 단순한 형태입니다.<br><br>
+                세포 구조가 아니기 때문에 세포 내 소기관도 없고, 독자적으로 물질대사가 일어나지도 않습니다.<br><br>
+                그래서 외부 자극에 대한 반응이나 항상성 유지 역시 하지 못합니다.<br><br> 
+                또한 증식을 하기 위해서는 다른 생명체(숙주)의 몸 속에 들어가 숙주의 세포를 이용해야만 합니다.<br><br>
+                이러한 이유로 바이러스는 생명체가 아닌 하나의 입자로 분류되기도 합니다.<br><br>
+                반면 세균은 원핵 생물의 특징을 가지고 있으며, 세포벽을 가지고 있습니다.<br><br>
+                바이러스와 다르게 물질대사도 일어납니다.<br><br> 
+                여러분들이 잘 아시는 김치나 된장과 같은 발효식품들이 혐기성 세균의 물질대사를 이용한 한 예시 입니다.<br><br>
+                스스로 증식이 가능하기 때문에 바이러스처럼 다른 생명체에 기생하는 것이 아닌, 공생이 가능합니다.<br><br> 
+                우리 대장 내 미생물인 대장균은 인간과 공존하는 대표적인 세균이라 할 수 있습니다.<br><br>
+                이렇게 세균과 바이러스의 대표적인 차이점 몇가지를 함께 알아보았습니다.<br><br><br>
+                이제 바이러스에 대해 좀 더 살펴보겠습니다.<br><br> 
+                앞서 살펴보았듯 바이러스는 다른 생명체의 세포를 통해서만 생명활동이 가능합니다.<br><br>
+                그리고 숙주세포에 침입하기 위해 상단의 바이러스 이미지에서 표면에 돋아있는 돌기들을 이용합니다.<br><br>
+                이를 스파이크단백질(Spike Glycoprotein)이라고 합니다.<br> <br>
+                스파이크단백질은 각 바이러스의 유전 정보에 따라 그 형태가 달라집니다.<br><br>
+                그래서 돌연변이가 일어난 바이러스는 스파이크단백질 또한 변형이 일어납니다.<br><br>
+                DNA-RNA에 대한 내용 중 RNA의 구조적 특성으로 인해 돌연변이가 일어나기 쉽다는 내용 기억하시나요?<br><br>
+                DNA를 가지는 바이러스도 있지만 대부분의 질병을 일으키는 바이러스는 유전 물질로 RNA를 가집니다.<br><br> 
+                그렇기 때문에 우리 몸에 침입하여 증식을 하는 과정에서 돌연변이가 일어나고,<br> 
+                새로운 바이러스가 생기는 것입니다.<br><br> 
+                우리를 괴롭히는 코로나 바이러스와 독감(Flu), HIV(에이즈)등이 대표적인 RNA바이러스입니다.<br><br>
+                왜 코로나는 돌연변이가 계속해서 생겨나고, 작년에 독감 예방 접종을 맞았는데 또 맞으라 하고,<br> HIV의 치료제 개발이 왜 어려운 일인지 이제 조금은 아실 것이라 생각합니다.<br><br>
+            </div>
+            <br><br>
+            <!-- 총 3문제의 퀴즈 제작 -->
+            <!-- 배열을 이용해 답을 미리 설정함 -->
+            <div id="quiz">
+                <span style="font-size: 1.5em;"><strong>Quiz</strong></span><br><br>
+                <!-- O,X문제 -->
+                <p> 1. 세균(bacteria)과 바이러스(virus)는 같은 것이다. </p>
+                <form name="q1">
+                 <input type="radio" name="btv" value="bv1">O
+                 <input type="radio" name="btv" value="bv2">X<br><br>
+                 <input type="button" name="선택" value="정답확인" onclick="bvQ()">
+                </form>
+                <script type="text/javascript">
+                 function bvQ() {
+                  if(q1.btv[1].checked==true)
+                     alert("정답입니다.");
+                  else 
+                      alert("오답입니다.");
+                 }
+                </script>
+                <br><br>
+                <!-- 사지선다 문제 -->
+                <p> 2. 다음 중 옳은 내용은? </p>
+                <form name="q2">
+                 <input type="radio" name="vr" value="vr1">세균(bacteria)는 세포 구조를 갖추고 있지 않다.<br><br>
+                 <input type="radio" name="vr" value="vr2">바이러스(virus)는 숙주 없이 스스로 증식이 가능하다.<br><br>
+                 <input type="radio" name="vr" value="vr3">바이러스(virus)는 생명체로 분류되기 애매한 특성을 갖고있다.<br><br>
+                 <input type="radio" name="vr" value="vr4">세균(bacteria)는 다른 생명체와 공생이 아닌 기생만 가능하다.<br><br>
+                 <input type="button" name="선택" value="정답확인" onclick="vrQ()"><br><br>
+                </form>
+                <script type="text/javascript">
+                 function vrQ() {
+                  if(q2.vr[2].checked==true)
+                     alert("정답입니다.");
+                  else 
+                      alert("오답입니다.");
+                 }
+                </script>
+        </section>
+    </body>
+</html>

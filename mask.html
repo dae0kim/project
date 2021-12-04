@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>COVID-19를 알아보자!</title>
+        <!-- mask css파일과 연결 -->
+        <link type="text/css" rel="stylesheet" href="mask.css">
+    </head>
+    <body onload="drawImage()">
+        <header>
+            <!-- 가장 상단의 이미지 로고. 누르면 메인 홈페이지로 이동하도록 연결 -->
+            <div id="mainlogo"> 
+                <a href="index.html">
+                <img width="180" height="150" src = "image/question-logo.png" /></a> <br />
+                <h3>"코로나" 얼마나 알고 계신가요?</h3>
+            </div>
+        </header>
+        <!-- 메뉴 바  -->
+        <nav id = "listbar">
+            <ul>
+                <li>
+                    <span><strong>코로나를 위한 생물학!</strong></span>
+                    <ol>
+                        <li><a href="dna-rna.html">DNA & RNA</a></li>
+                        <li><a href="virus.html">바이러스</a></li>
+                        <li><a href="vaccine.html">백신의 원리</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span><strong>예방이 최고!</strong></span>
+                    <ol>
+                        <li><a href="mask.html">마스크는 필수!</a></li>
+                        <li><a href="hand.html">손씻기는 필수!</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <!-- 본문의 마스크 이미지 -->
+            <div style="text-align: center;">
+                <img width="300" height="300" src="image/mask.png">
+            </div>
+            <!-- 본문 마스크 파트 -->
+            <div id="mask-part">
+                <span style="font-size: 1.5em;"><strong>마스크는 꼭 착용해요!</strong></span><br><br>
+                <script>
+                    // select 객체를 활용한 이미지 선택 함수
+                    function drawImage() {
+                        var sel = document.getElementById("mask");
+                        var img = document.getElementById("maskimage");
+                        img.src = sel.options[sel.selectedIndex].value;
+                    }
+                    // location 태그를 이용한 구매 링크 연결 함수
+                    function load() {
+                        var select = document.getElementById("site");
+                        window.location=select.options[select.selectedIndex].value;
+                    }
+                </script>
+                원하는 마스크를 선택하면 이미지가 출력됩니다.<br>
+                구매를 원하는 종류의 마스크를 이미지를 통해 확인하세요.<br>
+                이미지 하단의 버튼을 클릭하면 해당 사이트의 마스크 구매 링크로 이동합니다.<br><br>
+                <form>
+                    <!-- 이미지 선택을 위한 select 객체 -->
+                <select id="mask" onchange="drawImage()">
+                    <option value="image/kf94.png" selected>kf94마스크
+                    <option value="image/dental.png">의료용 마스크
+                    <option value="image/sportmask.png">스포츠 마스크
+                </select>
+                    <br><br>
+                <img id="maskimage" src="image/kf94.png" alt="">
+                </form>
+                <br><br>
+                <!-- 구매 사이트 링크 연결 -->
+                <select id="site">
+                    <option value="https://search.shopping.naver.com/search/all?where=all&frm=NVSCTAB&query=%EB%A7%88%EC%8A%A4%ED%81%AC" selected>네이버 쇼핑
+                    <option value="https://www.coupang.com/np/search?component=&q=%EB%A7%88%EC%8A%A4%ED%81%AC&channel=user">쿠팡
+                </select>
+                <br><br>
+                <!-- 사이트 연결 버튼 -->
+                <button onclick="load()">사이트 이동</button>
+            </div>            
+        </section>
+    </body>
+</html>

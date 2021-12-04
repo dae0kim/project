@@ -1,0 +1,46 @@
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/* 홈페이지 최상단 로고 위치를 가운데로 설정 */
+#mainlogo {
+  text-align: center;
+}
+/* 메인 홈페이지 본문 이미지 위치 설정 */
+#research-icon {
+  text-align: center;
+}
+/* 메뉴 바 색상 및 크기, 테두리 설정 */
+#listbar {
+  background-color: rgb(124, 165, 253);
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+}
+/* 메뉴 바 구성 항목 설정 */
+#listbar ul li {
+  list-style-type: none;
+  font-size: 20px;
+  display: inline;
+}
+#listbar ul li a {
+  color: white;
+  text-decoration: none;
+  margin-right: 3em;
+}
+/* 메뉴 바 항목에 마우스를 올리면 글자 색 변경 */
+#listbar ul li a:hover {
+  color: black;
+}
+nav {
+  margin-bottom: 3em;
+}
+/* 마스크 본문 박스 설정 */
+#mask-part {
+  border: 5px solid;
+  border-color: rgb(124, 165, 253);
+  border-radius: 20px;
+  background-color: rgb(218, 229, 253);
+  text-align: center;
+  height: 900px;
+}

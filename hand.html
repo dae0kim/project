@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>COVID-19를 알아보자!</title>
+        <!-- hand css파일과 연결 -->
+        <link type="text/css" rel="stylesheet" href="hand.css">
+    </head>
+    <body onload="drawImage()">
+        <header>
+            <!-- 가장 상단의 이미지 로고. 누르면 메인 홈페이지로 이동하도록 연결 -->
+            <div id="mainlogo"> 
+                <a href="index.html">
+                <img width="180" height="150" src = "image/question-logo.png" /></a> <br />
+                <h3>"코로나" 얼마나 알고 계신가요?</h3>
+            </div>
+        </header>
+        <!-- 메뉴 바  -->
+        <nav id = "listbar">
+            <ul>
+                <li>
+                    <span><strong>코로나를 위한 생물학!</strong></span>
+                    <ol>
+                        <li><a href="dna-rna.html">DNA & RNA</a></li>
+                        <li><a href="virus.html">바이러스</a></li>
+                        <li><a href="vaccine.html">백신의 원리</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span><strong>예방이 최고!</strong></span>
+                    <ol>
+                        <li><a href="mask.html">마스크는 필수!</a></li>
+                        <li><a href="hand.html">손씻기는 필수!</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <!-- 본문 상단 이미지 -->
+            <div style="text-align: center;">
+                <img width="300" height="300" src="image/handwash.png">
+            </div>
+            <!-- 본문 구매 관련 파트 -->
+            <div id="handwash-part">
+                <span style="font-size: 1.5em;"><strong>손은 자주 씻어요!</strong></span><br><br>
+                <script>
+                    // select 객체를 활용한 이미지 선택 함수
+                    function drawImage() {
+                        var sel = document.getElementById("handwash");
+                        var img = document.getElementById("handwashimage");
+                        img.src = sel.options[sel.selectedIndex].value;
+                    }
+                    // location 태그를 이용한 구매 링크 연결 함수
+                    function load() {
+                        var select = document.getElementById("site");
+                        window.location=select.options[select.selectedIndex].value;
+                    }
+                </script>
+                원하는 종류를 선택하면 이미지가 출력됩니다.<br>
+                구매를 원하는 종류의 손 세정제 및 소독제를 이미지를 통해 확인하세요.<br>
+                이미지 하단의 버튼을 클릭하면 해당 사이트의 구매 링크로 이동합니다.<br><br>
+                <form>
+                    <!-- 이미지 선택을 위한 select 객체 -->
+                <select id="handwash" onchange="drawImage()">
+                    <option value="image/pump.png" selected>펌프형 손 소독제
+                    <option value="image/spray.png">스프레이형 손 소독제
+                    <option value="image/smallspray.png">스프레이형 손 소독제(휴대용) 
+                    <option value="image/pumphandwash.png">펌프형 손 세정제    
+                </select>
+                    <br><br>
+                <img id="handwashimage" src="image/pump.png" alt="">
+                </form>
+                <br><br>
+                <!-- 구매 사이트 링크 연결 -->
+                <select id="site">
+                    <option value="https://search.shopping.naver.com/search/all?where=all&frm=NVSCTAB&query=%EC%86%90%EC%84%B8%EC%A0%95%EC%A0%9C" selected>네이버 쇼핑(손세정제)
+                    <option value="https://search.shopping.naver.com/search/all?where=all&frm=NVSCTAB&query=%EC%86%90%EC%86%8C%EB%8F%85%EC%A0%9C">네이버(손소독제)
+                    <option value="https://www.coupang.com/np/search?q=%EC%86%90%EC%84%B8%EC%A0%95%EC%A0%9C&channel=recent">쿠팡(손세정제)    
+                    <option value="https://www.coupang.com/np/search?component=&q=%EC%86%90%EC%86%8C%EB%8F%85%EC%A0%9C&channel=user">쿠팡(손소독제)
+                </select>
+                <br><br>
+                <!-- 사이트 연결 버튼 -->
+                <button onclick="load()">사이트 이동</button>
+            </div> 
+            <br><br>
+            <!-- 비누 원리 설명 파트 -->
+            <div id="soap-part">
+                <span style="font-size: 1.5em;"><strong>깜짝 상식!</strong></span><br><br>
+                여러분은 비누(손 세정제)의 원리에 대해 아시나요?<br><br>
+                비누 분자의 한쪽은 물에 잘 녹고, 다른 한쪽은 기름에 잘 녹는 화학적 특성을 가집니다.(=계면활성제)<br><br>
+                그래서 비누칠을 하면 기름때에 비누 분자가 붙고 물로 씻어낼 때 비누 분자가 물에 녹아 들어가며 기름때까지 떨어져 나오는 것입니다.<br><br> 
+                이 과정에서 기름에 흡착되었던 세균이 기름과 함께 쓸려나가면서 세균 제거 효과가 발생하게 됩니다.<br><br> 
+                비누 자체의 살균 능력은 그리 대단치 않기 때문에, 비누칠을 한 뒤 물로 꼼꼼하게 씻어내야 효과가 좋습니다.<br><br> 
+                어떤 비누든 간에 거품을 잘 내서 30초 이상 흐르는 물에 씻어내면 99퍼센트 정도의 세균 제거 효과가 확보되기 때문에<br>
+                성분이나 살균 능력을 강조하는 광고 멘트는 크게 신경 쓰지 않아도 좋습니다.<br><br> 
+            </div>           
+        </section>
+    </body>
+</html>

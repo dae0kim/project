@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>COVID-19를 알아보자!</title>
+        <!-- vaccine css파일과 연결 -->
+        <link type="text/css" rel="stylesheet" href="vaccine.css">
+    </head>
+    <body>
+        <header>
+            <!-- 가장 상단의 이미지 로고. 누르면 메인 홈페이지로 이동하도록 연결 -->
+            <div id="mainlogo"> 
+                <a href="index.html">
+                <img width="180" height="150" src = "image/question-logo.png" /></a> <br />
+                <h3>"코로나" 얼마나 알고 계신가요?</h3>
+            </div>
+        </header>
+        <!-- 메뉴 바  -->
+        <nav id = "listbar">
+            <ul>
+                <li>
+                    <span><strong>코로나를 위한 생물학!</strong></span>
+                    <ol>
+                        <li><a href="dna-rna.html">DNA & RNA</a></li>
+                        <li><a href="virus.html">바이러스</a></li>
+                        <li><a href="vaccine.html">백신의 원리</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span><strong>예방이 최고!</strong></span>
+                    <ol>
+                        <li><a href="mask.html">마스크는 필수!</a></li>
+                        <li><a href="hand.html">손씻기는 필수!</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <!-- 본문의 가장 상단에 audio 태그로 음악 재생 가능하도록 삽입. chrome에서 음악 자동재생으로 삽입하는 것이 막혀 사용자가 직접 조절 하도록 함.  -->
+            <div style="text-align: center;">
+                <span style="font-size: 0.8em;">음악을 들으며 읽으실 수 있습니다.</span><br>
+                <audio src="media/AboveTheTreetops.mp3" controls autoplay loop></audio>
+            </div>
+            <!-- 본문 백신 이미지 -->
+            <div style="text-align: center;">
+                <img width="300" height="300" src="image/vaccine.png">
+            </div>
+            <br><br>
+            <!-- 백신에 대한 설명 -->
+            <div id="vaccine-part">
+                <span style="font-size: 1.5em;"><strong>백신(vaccine)</strong></span><br><br>
+                백신을 이해하기 위해서는 우리 몸의 면역 체계 및 원리에 대한 지식이 필요합니다.<br><br> 
+                먼저 우리 몸의 면역 체계에 대해 간략히 알아보겠습니다.<br><br>
+                우리 몸의 면역 시스템은 크게 두가지로 볼 수 있습니다.<br><br> 
+                1차 방어는 외부 병원체(항원)의 침입을 직접적으로 막는 역할을 수행합니다.<br><br>
+                대표적으로 우리의 피부, 침, 콧물 등이 있습니다.<br>
+                피부는 물리적으로 침입을 막고, 침과 콧물 등의 점액은 살균 효과가 있는 효소를 포함하고 있습니다.<br><br>  
+                2차 방어는 1차 방어에 실패해 우리 몸 속으로 병원체가 침입했을 때 이들을 제거하는 역할을 합니다.<br><br>
+                백혈구와 같은 식세포들이 병원체를 삼켜 제거합니다.<br>
+                하지만 우리 몸이 외부의 병원체 침입을 바로 알아차리고 순식간에 모든 병원체를 제거하기는 힘듭니다.<br>
+                특히 바이러스는 숙주세포에 침입한 후 증식하는 속도가 굉장히 빠르기 때문에 바이러스가 늘어나는 속도를 우리 면역체계가 따라가는 것이 버겁습니다.<br><br>
+                그렇다면 어떻게 이 문제를 해결할까요?<br><br> 
+                항원에 대한 정보를 미리 가지고 있다면 우리 몸에 침입했을 때 곧바로 인식하고 항체를 만들어 우리 몸의 면역체계를 빠르게 활성화 시킬 수 있습니다.<br><br> 
+                그리고 이를 가능하게 하는 것이 바로 백신입니다.<br><br> 
+                백신의 종류는 정말 다양하지만 여기서는 3가지만 다뤄보도록 하겠습니다.<br><br> 
+                <span style="font-size: 1.2em;"><strong>1. 사백신</strong></span><br><br>
+                사백신의 사는 '죽을 사'를 써서 불활성화 백신이라고 부르기도 합니다.<br><br> 
+                병원체를 다른 장소에서 배양한 후 불활성화 상태로 만들어 우리 몸에 주입합니다.<br><br> 
+                그렇게 되면 항체가 몸에 들어와도 증식하여 질병을 일으키지 못하지만, 우리 몸은 항체가 가지고있는 유전 정보를 얻을 수 있습니다.<br><br> 
+                이때 얻은 정보를 토대로 같은 항체가 다시 침입하게 된다면 곧바로 대응을 할 수 있는 것입니다.<br><br> 
+                인플루엔자 바이러스 백신이 사백신의 대표적인 예시 입니다. <br><br>
+                <span style="font-size: 1.2em;"><strong>2. mRNA백신</strong></span><br><br>
+                mRNA백신은 특정 단백질을 만들도록 유전 정보를 전달하는 역할을 하는 mRNA를 활용한 백신입니다.<br><br>  
+                특정 항원(ex.COVID-19)의 스파이크단백질을 만드는데 관여하는 특정 유전자를 mRNA로 만들고 이것을 우리 몸에 주입합니다. <br><br>
+                우리 몸에 들어온 이 mRNA를 인식해 우리 세포가 항원의 스파이크단백질을 만들기 시작합니다. <br><br>
+                이렇게 만들어진 스파이크단백질이 우리 몸의 면역세포와 결합하여 해당 항원을 기억하게 되는 것입니다.<br><br>
+                애초에 질병을 일으키는 항원이 우리 몸에 들어오지 않기 때문에 백신을 맞은 것 때문에 병에 걸리는 일은 없습니다.<br><br>
+                또한 앞서 배웠던 것 처럼 mRNA는 자신의 역할을 수행하면 세포 내에서 분해가 됩니다.<br><br>
+                현재 접종 시행중인 화이자, 모더나 백신이 이에 해당합니다.<br><br>
+                <span style="font-size: 1.2em;"><strong>3. 바이러스 벡터 백신</strong></span><br><br>
+                바이러스 벡터 백신은 약화된 바이러스에 예방을 목표로 하는 항원의 스파이크단백질을 생성하는데 관여하는 유전자를 넣은 백신입니다.<br><br> 
+                유전자 재조합을 통해 만들어진 새로운 바이러스를 우리 몸에 주입합니다.<br><br> 
+                이 바이러스는 약화된 바이러스로, 어떤 질병을 일으키는 유전 정보를 가지지 않습니다.<br><br> 
+                대신 우리가 예방하고자 하는 질병의 항원이 가지고있는 스파이크단백질을 만드는 역할을 하는 유전 정보를 가지고 있습니다.<br><br> 
+                이 바이러스가 우리 몸에 들어오면 다른 바이러스와 마찬가지로 증식을 하기 시작합니다.<br><br> 
+                그러면서 목표 항원의 스파이크단백질을 가지는 바이러스가 만들어지고, 우리 몸은 이 항원을 인식하게 되는 것입니다.<br><br>
+                이때 얻은 정보로 해당 항원에 대한 면역을 갖게 되는 원리입니다.<br><br> 
+                대표적으로 코로나 백신 중 아스트라제네카, 얀센이 이에 해당합니다.<br><br><br><br>
+                간단하게 3종류의 백신과 그 원리에 대해 알아보았습니다.<br><br> 
+                저는 코로나 백신을 맞아야 한다고 주장하고 싶은 것도 아니고, 안전하다고 말하고 싶은 것도 아닙니다.<br><br>
+                단지 여러분들이 백신 접종과 관련하여 떠도는 유언비어들에 대해 휘둘리지 않았으면 하는 마음입니다.<br><br>
+                함께 알아본 기초적인 생물학적 지식을 통해 현재 코로나 사태를 바라보는 시야가 넓어졌기를 바랍니다.<br><br>  
+            </div>
+            <br><br>
+            <!-- 총 3문제의 퀴즈 제작 -->
+            <!-- 배열을 이용해 답을 미리 설정함 -->
+            <div id="quiz">
+                <span style="font-size: 1.5em;"><strong>Quiz</strong></span><br><br>
+                <!-- 사지선다 문제 -->
+                <p> 1. 다음 중 옳은 내용은?</p>
+                <form name="q1">
+                 <input type="radio" name="VC" value="V1">피부, 침, 콧물은 우리 몸의 면역 체계를 위해 필요하다.<br><br>
+                 <input type="radio" name="VC" value="V2">피부는 2차 방어를 담당한다.<br><br>
+                 <input type="radio" name="VC" value="V3">백혈구는 1차 방어를 담당한다.<br><br>
+                 <input type="radio" name="VC" value="V4">사백신은 살아있는 바이러스를 이용한다.<br><br>
+                 <input type="button" name="선택" value="정답확인" onclick="VCQ()">
+                </form>
+                <script type="text/javascript">
+                 function VCQ() {
+                  if(q1.VC[0].checked==true)
+                     alert("정답입니다.");
+                  else 
+                      alert("오답입니다.");
+                 }
+                </script>
+                <br><br>
+                <!-- O,X문제 -->
+                <p> 2. 백신으로 들어온 mRNA는 분해되지 않는다. </p>
+                <form name="q2">
+                 <input type="radio" name="mRNA" value="mr1">O
+                 <input type="radio" name="mRNA" value="mr2">X<br><br>
+                 <input type="button" name="선택" value="정답확인" onclick="mRNAQ()">
+                </form>
+                <script type="text/javascript">
+                 function mRNAQ() {
+                  if(q2.mRNA[1].checked==true)
+                     alert("정답입니다.");
+                  else 
+                      alert("오답입니다.");
+                 }
+                </script>
+                <br><br>
+                <!-- 사지선다 문제 -->
+                <p> 3. 다음 중 옳지 않은 내용은? </p>
+                <form name="q3">
+                 <input type="radio" name="all" value="a1">백혈구는 2차 방어수단에 해당한다.<br><br>
+                 <input type="radio" name="all" value="a2">백신은 항원에 대한 정보를 우리 몸에 미리 줌으로 후에 즉각적인 대처를 위함이다.<br><br>
+                 <input type="radio" name="all" value="a3">인플루엔자 백신은 사백신에 해당한다.<br><br>
+                 <input type="radio" name="all" value="a4">스파이크단백질은 질병을 일으킨다.<br><br>
+                 <input type="button" name="선택" value="정답확인" onclick="allQ()"><br><br>
+                </form>
+                <script type="text/javascript">
+                 function allQ() {
+                  if(q3.all[3].checked==true)
+                     alert("정답입니다.");
+                  else 
+                      alert("오답입니다.");
+                 }
+                </script>
+        </section>
+    </body>
+</html>
